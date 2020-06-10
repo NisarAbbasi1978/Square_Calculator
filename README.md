@@ -1,20 +1,20 @@
-# First Welcome
+# Square Calculator
 this is a demo rust library published on crates.io
 
 to use this library you have to add following line in dependency section of cargo.toml
 
-`square_calculator = "0.1.0"`
+`square_calculator = "0.1.1"`
 
 your cargo.toml file should look like this:
 ```
 [package]
 name = "square_calculator"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["N A Abbasi <nisar_abbasi@yahoo.com>"]
 edition = "2018"
 
 [dependencies]
-square_calculator = "0.1.0"
+square_calculator = "0.1.1"
 ```
 
 In `src/main.rs` you can use like this:
@@ -34,7 +34,7 @@ fn main() {
     let (firstsq,secondsq) = square (10,12);
     println!("First square is {}",firstsq);
     println!("Second square is {}",secondsq);
-    }
+}
 ```
 
 now `cargo run` for results
