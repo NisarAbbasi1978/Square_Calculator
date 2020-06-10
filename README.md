@@ -20,18 +20,20 @@ square_calculator = "0.1.0"
 In `src/main.rs` you can use like this:
 
 ```
-use firstwelcome;
+use square_calculator;
 fn main() {
-    println!("Hello, world!");
-    firstwelcome::hello();
+    let (firstsq,secondsq) = square_calculator::square (10,12);
+    println!("First square is {}",firstsq);
+    println!("Second square is {}",secondsq);
 }
 ```
 following will also work:
 ```
-use firstwelcome::hello;
+use square_calculator::square;
 fn main() {
-    println!("Hello, world!");
-    hello();
+    let (firstsq,secondsq) = square (10,12);
+    println!("First square is {}",firstsq);
+    println!("Second square is {}",secondsq);
     }
 ```
 
